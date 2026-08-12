@@ -1,0 +1,3154 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  overflow-anchor: none;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+}
+
+.exercise-video {
+  position: relative;
+  width: 100%;
+}
+video {
+  width: 100%;
+}
+.All-menu {
+  top: 0%;
+  position: fixed;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+}
+.logogym {
+  width: 9%;
+  height: 3.25rem;
+  margin-top: 2.7rem;
+  margin-left: 30px;
+  background-image: url(static/image/logo-gym.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25%;
+}
+.nav-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 7%;
+  position: relative;
+}
+.nav-list li a {
+  color: white;
+  &:hover {
+    cursor: pointer;
+    color: #30fe3f;
+  }
+}
+.menu {
+  position: relative;
+}
+.menu::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: -3px;
+  height: 2px;
+  width: 0px;
+  background-color: rgba(255, 255, 255, 0.448);
+  transition: 0.5s ease-in-out;
+}
+.menu:hover::before {
+  width: 100%;
+}
+.nav-submenu {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  padding-right: 8%;
+}
+.but > a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 7px 13px;
+  margin-left: 30px;
+  background-color: rgb(46, 217, 46);
+  color: whitesmoke;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.but > a:hover {
+  cursor: pointer;
+  background-color: rgb(25, 34, 45);
+}
+.NavbarMenu {
+  display: none;
+}
+.welcome {
+  color: rgb(73, 166, 73);
+  position: absolute;
+  bottom: 13rem;
+  left: 15rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.MDHH {
+  background: black;
+  min-height: 100vh;
+  margin-top: -5px;
+  padding: 5rem 2rem;
+  position: relative;
+  z-index: 2;
+}
+.dbch {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.dumbell {
+  font-size: x-large;
+}
+.bicycle {
+  font-size: x-large;
+}
+.carrot {
+  font-size: x-large;
+}
+.heart-pulse {
+  font-size: x-large;
+}
+.fig {
+  color: whitesmoke;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  font-family: "Archivo Black", sans-serif;
+}
+span {
+  position: absolute;
+  color: rgb(140, 131, 131);
+  font-size: large;
+  margin-left: 5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.step > h2 {
+  margin-top: 12%;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  color: rgb(48, 254, 63);
+  margin-bottom: 1.8rem;
+  font-weight: 900px;
+  font-family: "Momo Trust Display", sans-serif;
+  max-width: 400px;
+}
+.step > p {
+  color: rgb(140, 131, 131);
+  max-width: 500px;
+  font-size: large;
+  line-height: 2rem;
+  margin-left: 3rem;
+}
+.GIT {
+  width: 8rem;
+  height: 3rem;
+  margin-left: 3rem;
+  background-color: rgb(48, 254, 63);
+  padding-top: 15px;
+  font-weight: bolder;
+  border-radius: 5px;
+  text-align: center;
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 2rem;
+  &:hover {
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid white;
+  }
+}
+.GIT > a {
+  color: white;
+}
+.step-gympicture {
+  display: flex;
+  justify-content: space-between;
+}
+.gympicture {
+  margin-top: 10rem;
+  width: 34rem;
+  height: 25rem;
+  margin-right: 3rem;
+  background-image: url(static/image/gympic.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow:
+    rgba(62, 240, 46, 0.4) 0px 5px,
+    rgba(46, 240, 98, 0.3) 0px 10px,
+    rgba(15, 138, 65, 0.2) 0px 15px,
+    rgba(16, 179, 32, 0.1) 0px 20px,
+    rgba(27, 217, 46, 0.05) 0px 25px;
+}
+.classes-header > h2 {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  color: rgb(48, 254, 63);
+  margin-bottom: 1.8rem;
+  font-family: "Momo Trust Display", sans-serif;
+}
+.classes-header > p {
+  color: rgb(140, 131, 131);
+  max-width: 500px;
+  margin-left: 3rem;
+  font-size: large;
+  line-height: 2rem;
+}
+.boxs {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+  overflow: hidden;
+}
+.box1 {
+  position: relative;
+  width: 20rem;
+  height: 25rem;
+  background-image: url(static/image/slide_1.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  &:hover {
+    background-color: rgb(48, 254, 63);
+    cursor: pointer;
+  }
+}
+.box2 {
+  width: 20rem;
+  height: 25rem;
+  background-image: url(static/image/slide_2.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  &:hover {
+    background-color: rgb(48, 254, 63);
+    cursor: pointer;
+  }
+}
+.box3 {
+  width: 20rem;
+  height: 25rem;
+  background-image: url(static/image/slide_3.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  &:hover {
+    background-color: rgb(48, 254, 63);
+    cursor: pointer;
+  }
+}
+.box4 {
+  width: 20rem;
+  height: 25rem;
+  background-image: url(static/image/slide_4.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  &:hover {
+    background-color: rgb(48, 254, 63);
+    cursor: pointer;
+  }
+}
+.schedule-header > h2 {
+  margin-top: 15%;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  color: rgb(48, 254, 63);
+  margin-bottom: 1.8rem;
+  font-weight: 900px;
+  font-family: "Momo Trust Display", sans-serif;
+}
+.schedule-header > p {
+  color: rgb(140, 131, 131);
+  max-width: 500px;
+  margin-left: 3rem;
+  font-size: large;
+  line-height: 2rem;
+}
+.gym-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3rem auto;
+  font-family: Arial, sans-serif;
+}
+.weekly {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+  color: rgb(48, 254, 63);
+}
+.gym-table th {
+  border: 1px solid whitesmoke;
+  padding: 12px;
+  text-align: center;
+}
+.gym-table td {
+  border: 1px solid whitesmoke;
+  padding: 12px;
+  text-align: center;
+}
+.gym-table thead {
+  background-color: rgb(48, 254, 63);
+  color: whitesmoke;
+}
+.mon {
+  background-color: rgb(48, 254, 63);
+}
+.gym-table tbody tr {
+  background-color: white;
+}
+
+.gym-table tbody tr:hover {
+  background-color: whitesmoke;
+}
+.join {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  background-color: rgb(48, 254, 63);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.join:hover {
+  background-color: black;
+  color: white;
+}
+.trainers > h2 {
+  margin-top: 15%;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  color: rgb(48, 254, 63);
+  margin-bottom: 1.8rem;
+  font-weight: 900px;
+  font-family: "Momo Trust Display", sans-serif;
+}
+.trainers > p {
+  color: rgb(140, 131, 131);
+  max-width: 500px;
+  margin-left: 3rem;
+  font-size: large;
+  line-height: 2rem;
+}
+.all-pics {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 3%;
+}
+.pics1 {
+  width: 20rem;
+  height: 323px;
+  background-color: red;
+  background-image: url(static/image/pic1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgb(31, 193, 27) 10px 10px;
+}
+.pics2 {
+  width: 20rem;
+  height: 323px;
+  margin-top: 20%;
+  background-image: url(static/image/pic2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgb(31, 193, 27) 10px 10px;
+}
+.pics3 {
+  width: 20rem;
+  height: 323px;
+  background-image: url(static/image/pic3.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgb(31, 193, 27) 10px 10px;
+}
+.text-pic > h3 {
+  color: white;
+  margin-top: 10%;
+  font-size: 1.6rem;
+  font-weight: 5rem;
+  font-family: "Momo Trust Display", sans-serif;
+}
+.text-pic > p {
+  color: rgb(140, 131, 131);
+  margin-top: 7%;
+  max-width: 350px;
+  font-size: 1.2rem;
+}
+.featured > h2 {
+  margin-top: 15%;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  color: rgb(48, 254, 63);
+  margin-bottom: 1.8rem;
+  font-weight: 900px;
+  font-family: "Momo Trust Display", sans-serif;
+}
+.featured > p {
+  color: rgb(140, 131, 131);
+  max-width: 500px;
+  margin-left: 3rem;
+  font-size: large;
+  line-height: 2rem;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.service1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(31, 193, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service1:hover {
+  background: linear-gradient(
+    to right,
+    rgb(60, 136, 80) 65%,
+    rgb(21, 127, 21) 35%
+  );
+}
+.service1 > i {
+  color: white;
+  font-size: 2rem;
+}
+.cardio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.cardio-text {
+  max-width: 350px;
+  color: rgb(140, 131, 131);
+  font-size: large;
+}
+.cardio > h4 {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.service2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(31, 193, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service2:hover {
+  background: linear-gradient(
+    to right,
+    rgb(60, 136, 80) 65%,
+    rgb(21, 127, 21) 35%
+  );
+}
+.service2 > i {
+  color: white;
+  font-size: 2rem;
+}
+.strength {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.strength-text {
+  max-width: 380px;
+  color: rgb(140, 131, 131);
+  font-size: large;
+}
+.strength > h4 {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.service3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(31, 193, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service3:hover {
+  background: linear-gradient(
+    to right,
+    rgb(60, 136, 80) 65%,
+    rgb(21, 127, 21) 35%
+  );
+}
+.service3 > i {
+  color: white;
+  font-size: 2rem;
+}
+.yoga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.yoga-text {
+  max-width: 310px;
+  color: rgb(140, 131, 131);
+  font-size: large;
+}
+.yoga > h4 {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.serve {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  margin-right: 5%;
+}
+.service4 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(31, 193, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service4:hover {
+  background: linear-gradient(
+    to right,
+    rgb(60, 136, 80) 65%,
+    rgb(21, 127, 21) 35%
+  );
+}
+.service4 > i {
+  color: white;
+  font-size: 2rem;
+}
+.hiit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.hiit-text {
+  max-width: 280px;
+  color: rgb(140, 131, 131);
+  font-size: large;
+}
+.hiit > h4 {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.service5 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(31, 193, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service5:hover {
+  background: linear-gradient(
+    to right,
+    rgb(60, 136, 80) 65%,
+    rgb(21, 127, 21) 35%
+  );
+}
+.service5 > i {
+  color: white;
+  font-size: 2rem;
+}
+.zumba {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.zumba-text {
+  max-width: 300px;
+  color: rgb(140, 131, 131);
+  font-size: large;
+}
+.zumba > h4 {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.service6 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(31, 193, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service6:hover {
+  background: linear-gradient(
+    to right,
+    rgb(60, 136, 80) 65%,
+    rgb(21, 127, 21) 35%
+  );
+}
+.service6 > i {
+  color: white;
+  font-size: 2rem;
+}
+.weight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.weight-text {
+  max-width: 420px;
+  color: rgb(140, 131, 131);
+  font-size: large;
+}
+.weight > h4 {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.membership {
+  padding: 5rem 1.5rem;
+  background: #0d1117;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.membership-header {
+  max-width: 700px;
+  margin: auto;
+}
+
+.membership-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.membership-card {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.membership-card:hover {
+  transform: translateY(-10px);
+}
+
+.membership-card.popular {
+  border: 2px solid #30fe3f;
+}
+
+.membership-card .price {
+  font-size: 2rem;
+  color: #30fe3f;
+}
+
+.membership-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.membership-card ul li {
+  margin: 0.6rem 0;
+}
+
+.join-now {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.8rem;
+  background: #30fe3f;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tact {
+  background: rgb(18, 18, 18);
+  min-height: 100dvh;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(48, 254, 63);
+  margin-bottom: 1rem;
+}
+.contact p {
+  color: rgb(140, 131, 131);
+  font-size: 1rem;
+  line-height: 1.8rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+  color: whitesmoke;
+}
+.form-group {
+  margin-bottom: 1.2rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.butt button {
+  width: 100%;
+  padding: 0.85rem;
+  background: green;
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.butt button:hover {
+  background: black;
+  cursor: pointer;
+}
+.gym-footer {
+  background: black;
+  color: whitesmoke;
+  padding: 4rem 1.5rem 1rem;
+  font-family: Arial, sans-serif;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-brandname h3 {
+  color: rgb(21, 127, 21);
+  margin-bottom: 1rem;
+}
+.footer-links h4 {
+  margin-bottom: 1rem;
+  color: rgb(46, 217, 46);
+}
+.footer-contact h4 {
+  margin-bottom: 1rem;
+  color: rgb(46, 217, 46);
+}
+.footer-social h4 {
+  margin-bottom: 1rem;
+  color: rgb(46, 217, 46);
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: color 0.3s;
+}
+.footer-links ul li a:hover {
+  color: rgb(46, 217, 46);
+}
+.footer-contact p {
+  margin-bottom: 0.6rem;
+}
+.footer-contact i {
+  margin-right: 0.5rem;
+  color: rgb(46, 217, 46);
+}
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+  background: #1e293bbe;
+  color: white;
+  border-radius: 50%;
+  transition:
+    background 0.3s,
+    transform 0.3s;
+}
+
+.social-icons a:hover {
+  background: rgb(46, 217, 46);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #1e293bbe;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(245, 245, 245, 0.556);
+}
+
+/* TABLET RESPONSIVE */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .All-menu {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 95%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    margin: 12px;
+  }
+
+  .logogym {
+    width: 105px;
+    height: 60px;
+    margin: 0px;
+    object-fit: contain;
+    flex-shrink: 0 0 auto;
+  }
+
+  .nav-submenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* NAVIGATION LINKS */
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.9rem;
+    padding: 0;
+    width: auto;
+    font-size: 1.08rem;
+    font-weight: 700;
+  }
+
+  .nav-list li {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .nav-list li a {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0rem;
+    white-space: nowrap;
+  }
+
+  /* CONTACT BUTTON */
+
+  .but {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .NavbarMenu {
+    display: none;
+  }
+
+  /* HERO / VIDEO */
+
+  .exercise-video {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .exercise-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .welcome {
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+    width: 90%;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .MDHH {
+    min-height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .dbch {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .dumbell,
+  .bicycle,
+  .carrot,
+  .heart-pulse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+  }
+
+  .fig {
+    font-size: 1.5rem;
+    margin-left: 0.7rem;
+  }
+
+  .fig span {
+    position: static;
+    display: block;
+    margin: 0.3rem 0 0;
+    font-size: 1.3rem;
+  }
+
+  /* STEP UP SECTION */
+
+  .step-gympicture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .step > h2 {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 3.5rem;
+  }
+
+  .step > p {
+    max-width: 100%;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+  }
+
+  .GIT {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .gympicture {
+    width: 100%;
+    height: 26rem;
+    margin: 2rem 0 0;
+  }
+
+  /* SECTION HEADINGS */
+
+  .classes-header > h2,
+  .trainers > h2,
+  .featured > h2 {
+    margin-left: 1rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
+  .classes-header > p,
+  .trainers > p,
+  .featured > p {
+    max-width: 650px;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+
+  /* CLASSES */
+
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 90%;
+    margin: 3rem auto 0;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 100%;
+    height: 23rem;
+  }
+
+  /* SCHEDULE */
+
+  .schedule-header > h2 {
+    margin-left: 1rem;
+    font-size: 3.5rem;
+  }
+
+  .schedule-header > p {
+    margin-left: 1rem;
+    max-width: 650px;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+  .weekly {
+    font-size: 2.2rem;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  .gym-table {
+    width: 100%;
+    min-width: 90px;
+    font-size: 1.45rem;
+  }
+
+  .gym-table th,
+  .gym-table td {
+    padding: 6px 20px;
+  }
+
+  .join {
+    padding: 0.6rem 0.18rem;
+    font-size: 0.95rem;
+  }
+
+  /* TRAINERS */
+
+  .trainers > h2 {
+    font-size: 3.5rem;
+  }
+  .trainers > P {
+    margin-left: 1rem;
+    max-width: 650px;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+  .all-pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.7rem;
+    width: 95%;
+    margin: 3.5rem auto 0;
+  }
+
+  .pics1,
+  .pics2,
+  .pics3 {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .pics2 {
+    margin-top: 4rem;
+  }
+
+  .text-pic > h3 {
+    font-size: 1.7rem;
+    margin-top: 1.7rem;
+  }
+
+  .text-pic > p {
+    max-width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  /* SERVICES */
+
+  .featured > h2 {
+    font-size: 3.5rem;
+  }
+  .featured > p {
+    margin-left: 1rem;
+    max-width: 650px;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+  .services,
+  .serve {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 95%;
+    margin: 3rem auto 0;
+  }
+
+  .serve {
+    margin-right: auto;
+  }
+
+  .cardio-text,
+  .strength-text,
+  .yoga-text,
+  .hiit-text,
+  .zumba-text,
+  .weight-text {
+    max-width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+  }
+
+  .cardio > h4,
+  .strength > h4,
+  .yoga > h4,
+  .hiit > h4,
+  .zumba > h4,
+  .weight > h4 {
+    font-size: 1.75rem;
+  }
+
+  /* MEMBERSHIP */
+
+  .membership {
+    padding: 4rem 2rem;
+  }
+  .membership-header > h2 {
+    font-size: 2rem;
+  }
+  .membership-header > p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  .membership-header {
+    max-width: 650px;
+  }
+
+  .membership-cards {
+    grid-template-columns: repeat(2.5, 1fr);
+    gap: 1.5rem;
+  }
+
+  .membership-card {
+    padding: 2rem;
+  }
+  .membership-card > h3 {
+    font-size: 1.83rem;
+  }
+
+  .membership-card .price {
+    font-size: 2.33rem;
+  }
+  .membership-card > ul {
+    font-size: 1.23rem;
+  }
+
+  .membership-card > a {
+    font-size: 1.34rem;
+  }
+
+  /* CONTACT */
+
+  .tact {
+    min-height: auto;
+    padding: 4rem 2rem;
+  }
+  .contact > h2 {
+    font-size: 3.5rem;
+  }
+  .contact > p {
+    font-size: 1.8rem;
+  }
+  .form-group > label {
+    font-size: 1.7rem;
+  }
+  .contact-form {
+    width: 90%;
+    max-width: 600px;
+    font-size: 3rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .butt > button {
+    font-size: 1.79rem;
+  }
+
+  /* FOOTER */
+
+  .gym-footer {
+    padding: 4rem 2rem 1rem;
+  }
+  .footer-brandname > h3 {
+    font-size: 1.745rem;
+  }
+  .footer-brandname > p {
+    font-size: 1.245rem;
+  }
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 800px;
+  }
+  .footer-links > h4 {
+    font-size: 1.4rem;
+  }
+  .footer-links > ul {
+    font-size: 1.245rem;
+  }
+  .footer-contact > h4 {
+    font-size: 1.4rem;
+  }
+  .footer-contact > p {
+    font-size: 1.245rem;
+  }
+  .footer-social > h4 {
+    font-size: 1.4rem;
+  }
+  .footer-bottom {
+    margin-top: 2.5rem;
+  }
+  .footer-bottom > p {
+    font-size: 1rem;
+  }
+}
+
+/* TABLET / LARGE PHONE */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* HERO / VIDEO */
+
+  .exercise-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    overflow: hidden;
+  }
+
+  .exercise-video .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .exercise-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* NAVBAR */
+
+  .All-menu {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    margin: 0;
+    z-index: 1000;
+  }
+
+  /* LOGO */
+
+  .logogym {
+    width: 105px;
+    height: 55px;
+    margin: 0;
+    margin-left: 6rem;
+  }
+
+  /* NAVIGATION WRAPPER */
+
+  .nav-submenu {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  /* HIDDEN NAVIGATION */
+
+  .nav-list {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 500px;
+    max-width: 82%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0;
+    padding: 1.5rem 1.5rem;
+    background-color: rgb(25, 34, 45);
+    transform: translateX(-100%);
+    visibility: hidden;
+    overflow-y: auto;
+    transition:
+      transform 0.4s ease,
+      visibility 0.4s ease;
+  }
+
+  /* OPEN MENU */
+
+  .nav-list.show {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  /* NAV ITEMS */
+
+  .nav-list > li {
+    position: relative;
+    width: 100%;
+  }
+
+  .nav-list > li > a {
+    display: block;
+    width: 100%;
+    padding: 1.25rem 0;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition:
+      color 0.3s ease,
+      padding-left 0.3s ease;
+  }
+
+  .nav-list > li > a:hover {
+    color: rgb(48, 254, 63);
+    padding-left: 0.4rem;
+  }
+
+  /* NAV UNDERLINE */
+
+  .menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(48, 254, 63, 0.7);
+    transition: width 0.3s ease;
+  }
+
+  .menu:hover::before {
+    width: 100%;
+  }
+
+  /* CONTACT INSIDE MOBILE MENU */
+
+  .nav-list .but {
+    width: 100%;
+    margin: 1.9rem 0 0;
+    padding: 0;
+  }
+
+  .nav-list .but > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    background-color: rgb(48, 254, 63);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 6px;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .nav-list .but > a:hover {
+    background-color: rgb(25, 34, 45);
+    transform: translateY(-2px);
+  }
+
+  /* HAMBURGER */
+
+  .NavbarMenu {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    flex-shrink: 0;
+    z-index: 1001;
+    transition: background-color 0.3s ease;
+  }
+
+  .NavbarMenu i {
+    color: white;
+    font-size: 2.5rem;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .NavbarMenu:hover {
+    background-color: rgba(48, 254, 63, 0.12);
+  }
+
+  .NavbarMenu:hover i {
+    color: rgb(48, 254, 63);
+    transform: scale(1.08);
+  }
+
+  .welcome {
+    position: absolute;
+    left: 50%;
+    bottom: 10rem;
+    width: 90%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  /* MAIN CONTENT */
+
+  .MDHH {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -5px;
+    padding: 4rem 1.5rem;
+  }
+
+  .dbch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .dumbell,
+  .bicycle,
+  .carrot,
+  .heart-pulse {
+    display: flex;
+    align-items: center;
+    font-size: large;
+  }
+
+  .fig {
+    font-size: 1.85rem;
+    margin-left: 5rem;
+  }
+
+  .fig span {
+    position: static;
+    display: block;
+    font-size: 1.3rem;
+  }
+
+  /* STEP UP SECTION */
+
+  .step-gympicture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .step-gympicture > .step {
+    width: 95%;
+  }
+
+  .step > h2 {
+    margin: 0 0 1.5rem 0;
+    max-width: 100%;
+    font-size: 2.73rem;
+    line-height: 1.2;
+  }
+
+  .step > p {
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .GIT {
+    margin: 2rem 0 0 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .gympicture {
+    width: 100%;
+    max-width: 700px;
+    height: 320px;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* CLASSES */
+
+  .classes-header > h2 {
+    margin: 5rem 0 1.2rem 0;
+    font-size: 2.73rem;
+  }
+
+  .classes-header > p {
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  /* CLASS CARDS */
+
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    width: 100%;
+    margin-top: 3.5rem;
+    overflow: visible;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 100%;
+    height: 280px;
+  }
+
+  /* SCHEDULE */
+
+  .schedule-header > h2 {
+    margin: 5rem 0 1.2rem 0;
+    font-size: 2.73rem;
+  }
+
+  .schedule-header > p {
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    margin-top: 2.5rem;
+    overflow-x: auto;
+  }
+
+  .weekly {
+    font-size: 1.9rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .gym-table {
+    width: 700px;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .gym-table th,
+  .gym-table td {
+    padding: 5px;
+    white-space: nowrap;
+  }
+
+  /* TRAINERS */
+
+  .trainers > h2 {
+    margin: 5rem 0 1.2rem 0;
+    font-size: 2.73rem;
+  }
+
+  .trainers > p {
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  /* TRAINER CARDS */
+
+  .all-pics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    margin-top: 3.3rem;
+  }
+
+  .text-pic {
+    width: 100%;
+  }
+
+  .pics1,
+  .pics2,
+  .pics3 {
+    width: 100%;
+    height: 280px;
+    margin-top: 0;
+  }
+
+  .text-pic > h3 {
+    margin-top: 1.5rem;
+    font-size: 1.65rem;
+  }
+
+  .text-pic > p {
+    max-width: 100%;
+    margin-top: 1.9rem;
+    font-size: 1.35rem;
+    line-height: 1.6rem;
+  }
+
+  /* FEATURED SERVICES */
+
+  .featured > h2 {
+    margin: 5rem 0 1.2rem 0;
+    font-size: 2.73rem;
+  }
+
+  .featured > p {
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  /*   
+     SERVICES */
+
+  .services,
+  .serve {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem 1.5rem;
+    width: 100%;
+    margin: 3rem 0 0;
+  }
+
+  .cardio,
+  .strength,
+  .yoga,
+  .hiit,
+  .zumba,
+  .weight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .cardio-text,
+  .strength-text,
+  .yoga-text,
+  .hiit-text,
+  .zumba-text,
+  .weight-text {
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+
+  .cardio > h4,
+  .strength > h4,
+  .yoga > h4,
+  .hiit > h4,
+  .zumba > h4,
+  .weight > h4 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  /* MEMBERSHIP */
+
+  .membership {
+    padding: 4rem 1.5rem;
+  }
+
+  .membership-header {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .membership-header h2 {
+    font-size: 3rem;
+  }
+
+  .membership-header p {
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+  }
+
+  .membership-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .membership-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .membership-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .membership-card .price {
+    font-size: 1.9rem;
+  }
+
+  .membership-card ul li {
+    font-size: 1.1rem;
+  }
+
+  /* CONTACT */
+
+  .tact {
+    width: 100%;
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .contact {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 2.6rem;
+  }
+
+  .contact p {
+    width: 100%;
+    max-width: 600px;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+  .form-group > label {
+    font-size: 1.4rem;
+  }
+  input,
+  textarea {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .butt {
+    width: 100%;
+  }
+
+  .butt button {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  /* FOOTER */
+
+  .gym-footer {
+    padding: 4rem 1.5rem 1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 10rem;
+    width: 100%;
+  }
+
+  .footer-brandname,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    width: 100%;
+  }
+  .footer-brandname,
+  .footer-links,
+  .footer-contact,
+  .footer-social > h4 {
+    font-size: 1.7rem;
+  }
+
+  .footer-brandname p,
+  .footer-contact p,
+  .footer-links li,
+  .footer-social {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  .footer-bottom {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* PHONE */
+
+@media (min-width: 376px) and (max-width: 480px) {
+  /* HERO */
+
+  .exercise-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 620px;
+    overflow: hidden;
+  }
+
+  .exercise-video .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .exercise-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* NAVBAR */
+
+  .All-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin: 0;
+    z-index: 1000;
+  }
+
+  /* LOGO */
+
+  .logogym {
+    width: 70px;
+    height: 40px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  /* NAVIGATION CONTAINER */
+
+  .nav-submenu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* MOBILE MENU */
+
+  .nav-list {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 280px;
+    max-width: 82%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: rgb(25, 34, 45);
+    transform: translateX(-100%);
+    visibility: hidden;
+    overflow-y: auto;
+    transition:
+      transform 0.4s ease,
+      visibility 0.4s ease;
+  }
+
+  /* OPEN MENU */
+
+  .nav-list.show {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  /* NAV ITEMS */
+
+  .nav-list > li {
+    position: relative;
+    width: 100%;
+  }
+
+  .nav-list > li > a {
+    display: block;
+    width: 100%;
+    padding: 1.3rem 0;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+      color 0.3s ease,
+      padding-left 0.3s ease;
+  }
+
+  .nav-list .menu a:hover {
+    color: rgb(48, 254, 63);
+    padding-left: 0.3rem;
+  }
+
+  /* UNDERLINE */
+
+  .menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(48, 254, 63);
+    transition: width 0.3s ease;
+  }
+
+  .menu:hover::before {
+    width: 100%;
+  }
+
+  /* CONTACT BUTTON */
+
+  .nav-list .but {
+    width: 100%;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+
+  .nav-list .but > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem;
+    background-color: rgb(48, 254, 63);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+
+  .nav-list .but > a:hover {
+    background-color: rgb(25, 34, 45);
+  }
+
+  /* HAMBURGER */
+
+  .NavbarMenu {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 7px;
+    z-index: 1001;
+  }
+
+  .NavbarMenu i {
+    color: white;
+    font-size: 1.7rem;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .NavbarMenu:hover i {
+    color: rgb(48, 254, 63);
+    transform: scale(1.08);
+  }
+
+  /* HERO TEXT */
+
+  .welcome {
+    position: absolute;
+    left: 50%;
+    bottom: 8rem;
+    width: 90%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  /* MAIN CONTENT */
+
+  .MDHH {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -5px;
+    padding: 3.5rem 1rem;
+  }
+
+  /* STATISTICS */
+
+  .dbch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+  }
+
+  .dumbell,
+  .bicycle,
+  .carrot,
+  .heart-pulse {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+  }
+
+  .fig {
+    margin-left: 2rem;
+    font-size: 1.15rem;
+  }
+
+  .fig span {
+    position: static;
+    display: block;
+    margin: 0.15rem 0 0;
+    font-size: 0.75rem;
+  }
+
+  /* STEP UP */
+
+  .step-gympicture {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+  }
+
+  .step-gympicture > .step {
+    width: 100%;
+  }
+
+  .step > h2 {
+    margin: 0 0 1.2rem;
+    max-width: 100%;
+    font-size: 1.9rem;
+    line-height: 1.25;
+  }
+
+  .step > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7rem;
+  }
+
+  .GIT {
+    margin: 1.8rem 0 0;
+  }
+
+  .gympicture {
+    width: 100%;
+    height: 270px;
+    margin: 0;
+  }
+
+  /* CLASSES */
+
+  .classes-header > h2 {
+    margin: 4.5rem 0 1rem;
+    font-size: 1.9rem;
+  }
+
+  .classes-header > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7rem;
+  }
+
+  /* CLASS IMAGES */
+
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 100%;
+    height: 220px;
+  }
+
+  /* SCHEDULE */
+
+  .schedule-header > h2 {
+    margin: 4.5rem 0 1rem;
+    font-size: 1.9rem;
+  }
+
+  .schedule-header > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7rem;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    margin-top: 2rem;
+    overflow-x: auto;
+  }
+
+  .weekly {
+    margin: 0 0 1.2rem;
+    font-size: 1.3rem;
+    white-space: nowrap;
+  }
+
+  .gym-table {
+    width: 680px;
+    margin: 0;
+    font-size: 0.85rem;
+  }
+
+  .gym-table th,
+  .gym-table td {
+    padding: 9px 7px;
+    white-space: nowrap;
+  }
+
+  .join {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  /* TRAINERS */
+
+  .trainers > h2 {
+    margin: 4.5rem 0 1rem;
+    font-size: 1.9rem;
+  }
+
+  .trainers > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7rem;
+  }
+
+  /* TRAINER PICTURES */
+
+  .all-pics {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .text-pic {
+    width: 100%;
+  }
+
+  .pics1,
+  .pics2,
+  .pics3 {
+    width: 100%;
+    height: 280px;
+    margin-top: 0;
+  }
+
+  .text-pic > h3 {
+    margin-top: 1.3rem;
+    font-size: 1.35rem;
+  }
+
+  .text-pic > p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0.6rem;
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  /* FEATURED SERVICES */
+
+  .featured > h2 {
+    margin: 4.5rem 0 1rem;
+    font-size: 1.9rem;
+  }
+
+  .featured > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  /* SERVICES */
+
+  .services,
+  .serve {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem 1rem;
+    width: 100%;
+    margin: 2.5rem 0 0;
+  }
+
+  .cardio,
+  .strength,
+  .yoga,
+  .hiit,
+  .zumba,
+  .weight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    text-align: center;
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4,
+  .service5,
+  .service6 {
+    width: 65px;
+    height: 65px;
+  }
+
+  .service1 > i,
+  .service2 > i,
+  .service3 > i,
+  .service4 > i,
+  .service5 > i,
+  .service6 > i {
+    font-size: 1.5rem;
+  }
+
+  .cardio > h4,
+  .strength > h4,
+  .yoga > h4,
+  .hiit > h4,
+  .zumba > h4,
+  .weight > h4 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .cardio-text,
+  .strength-text,
+  .yoga-text,
+  .hiit-text,
+  .zumba-text,
+  .weight-text {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  /* MEMBERSHIP */
+
+  .membership {
+    padding: 4rem 1rem;
+  }
+
+  .membership-header {
+    width: 100%;
+  }
+
+  .membership-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .membership-header p {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    line-height: 1.6rem;
+  }
+
+  .membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+    margin-top: 2rem;
+  }
+
+  .membership-card {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: 14px;
+  }
+
+  .membership-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .membership-card .price {
+    font-size: 1.7rem;
+  }
+
+  .membership-card ul li {
+    font-size: 0.9rem;
+  }
+
+  .join-now {
+    padding: 0.65rem 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  /* CONTACT */
+
+  .tact {
+    width: 100%;
+    min-height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .contact {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 1.9rem;
+  }
+
+  .contact p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .butt {
+    width: 100%;
+  }
+
+  .butt button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  /* FOOTER */
+
+  .gym-footer {
+    padding: 3.5rem 1rem 1rem;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .footer-brandname,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    width: 100%;
+  }
+
+  .footer-brandname p,
+  .footer-contact p,
+  .footer-links li {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .social-icons a {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* EXTRA - SMALL PHONES */
+
+@media (max-width: 375px) {
+  .exercise-video {
+    width: 100%;
+    height: 100vh;
+    min-height: 580px;
+    overflow: hidden;
+  }
+
+  .exercise-video .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .exercise-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* NAVBAR */
+
+  .All-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0rem;
+    margin: 0;
+    z-index: 1000;
+  }
+
+  /* LOGO */
+
+  .logogym {
+    width: 70px;
+    height: 35px;
+    margin: 0;
+    flex-shrink: 0;
+    margin-right: 10rem;
+  }
+
+  /* NAVIGATION WRAPPER */
+
+  .nav-submenu {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  /* HIDDEN NAVIGATION */
+
+  .nav-list {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    max-width: 65%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin: 0;
+    padding: 1.5rem 1.5rem;
+    background-color: rgb(25, 34, 45);
+    transform: translateX(-100%);
+    visibility: hidden;
+    overflow-y: auto;
+    transition:
+      transform 0.4s ease,
+      visibility 0.4s ease;
+  }
+
+  /* OPEN MENU */
+
+  .nav-list.show {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  /* NAV ITEMS */
+
+  .nav-list > li {
+    position: relative;
+    width: 100%;
+  }
+
+  .nav-list > li > a {
+    display: block;
+    width: 100%;
+    padding: 1.25rem 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition:
+      color 0.3s ease,
+      padding-left 0.3s ease;
+  }
+
+  .nav-list > li > a:hover {
+    color: rgb(48, 254, 63);
+    padding-left: 0.4rem;
+  }
+
+  /* NAV UNDERLINE */
+
+  .menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: rgba(48, 254, 63, 0.7);
+    transition: width 0.3s ease;
+  }
+
+  .menu:hover::before {
+    width: 100%;
+  }
+
+  /* CONTACT INSIDE MOBILE MENU */
+
+  .nav-list .but {
+    width: 100%;
+    margin: 1.9rem 0 0;
+    padding: 0;
+  }
+
+  .nav-list .but > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    background-color: rgb(48, 254, 63);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .nav-list .but > a:hover {
+    background-color: rgb(25, 34, 45);
+    transform: translateY(-2px);
+  }
+
+  /* HAMBURGER */
+
+  .NavbarMenu {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 8px;
+  }
+
+  .NavbarMenu i {
+    color: white;
+    font-size: 1.75rem;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .NavbarMenu:hover {
+    background-color: rgba(48, 254, 63, 0.12);
+  }
+
+  .NavbarMenu:hover i {
+    color: rgb(48, 254, 63);
+    transform: scale(1.08);
+  }
+
+  /* HERO TEXT */
+
+  .welcome {
+    position: absolute;
+    left: 50%;
+    bottom: 6rem;
+    width: 92%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  /* MAIN SECTION */
+
+  .MDHH {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -5px;
+    padding: 3rem 0.8rem;
+  }
+
+  /* STATISTICS */
+
+  .dbch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 0.5rem;
+    margin-bottom: 3.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .dumbell,
+  .bicycle,
+  .carrot,
+  .heart-pulse {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .dumbell i,
+  .bicycle i,
+  .carrot i,
+  .heart-pulse i {
+    font-size: 1.2rem;
+  }
+
+  .fig {
+    margin-left: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .fig > span {
+    position: static;
+    display: block;
+    margin: 0.1rem 0 0;
+    font-size: 0.65rem;
+  }
+
+  /* STEP UP */
+
+  .step-gympicture {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .step-gympicture,
+  .step {
+    width: 100%;
+  }
+
+  .step > h2 {
+    margin: 0 0 1rem;
+    max-width: 100%;
+    font-size: 1.65rem;
+    line-height: 1.25;
+  }
+
+  .step > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6rem;
+  }
+
+  .GIT {
+    width: 7.5rem;
+    height: auto;
+    margin: 1.5rem 0 0;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .gympicture {
+    width: 100%;
+    height: 230px;
+    margin: 0;
+  }
+
+  /* CLASSES */
+
+  .classes-header > h2 {
+    margin: 4rem 0 1rem;
+    font-size: 1.65rem;
+  }
+
+  .classes-header > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6rem;
+  }
+
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 100%;
+    height: 185px;
+  }
+
+  /* SCHEDULE */
+
+  .schedule-header > h2 {
+    margin: 4rem 0 1rem;
+    font-size: 1.65rem;
+  }
+
+  .schedule-header > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6rem;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    margin-top: 1.8rem;
+    overflow-x: auto;
+  }
+
+  .weekly {
+    margin: 0 0 1rem;
+    font-size: 1.15rem;
+    white-space: nowrap;
+  }
+
+  .gym-table {
+    width: 650px;
+    margin: 0;
+    font-size: 0.78rem;
+  }
+
+  .gym-table th,
+  .gym-table td {
+    padding: 8px 6px;
+    white-space: nowrap;
+  }
+
+  .join {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.72rem;
+  }
+
+  /* TRAINERS */
+
+  .trainers > h2 {
+    margin: 4rem 0 1rem;
+    font-size: 1.65rem;
+  }
+
+  .trainers > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6rem;
+  }
+
+  .all-pics {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .text-pic {
+    width: 100%;
+  }
+
+  .pics1,
+  .pics2,
+  .pics3 {
+    width: 100%;
+    height: 245px;
+    margin-top: 0;
+  }
+
+  .text-pic > h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .text-pic > p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0.5rem;
+    font-size: 0.88rem;
+    line-height: 1.5rem;
+  }
+
+  /* FEATURED */
+
+  .featured > h2 {
+    margin: 4rem 0 1rem;
+    font-size: 1.65rem;
+  }
+
+  .featured > p {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6rem;
+  }
+
+  /* SERVICES */
+
+  .services,
+  .serve {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem 0.7rem;
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+
+  .cardio,
+  .strength,
+  .yoga,
+  .hiit,
+  .zumba,
+  .weight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .service1,
+  .service2,
+  .service3,
+  .service4,
+  .service5,
+  .service6 {
+    width: 58px;
+    height: 58px;
+  }
+
+  .service1 > i,
+  .service2 > i,
+  .service3 > i,
+  .service4 > i,
+  .service5 > i,
+  .service6 > i {
+    font-size: 1.3rem;
+  }
+
+  .cardio > h4,
+  .strength > h4,
+  .yoga > h4,
+  .hiit > h4,
+  .zumba > h4,
+  .weight > h4 {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .cardio-text,
+  .strength-text,
+  .yoga-text,
+  .hiit-text,
+  .zumba-text,
+  .weight-text {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.78rem;
+    line-height: 1.4rem;
+  }
+
+  /* MEMBERSHIP */
+
+  .membership {
+    padding: 3.5rem 0.8rem;
+  }
+
+  .membership-header h2 {
+    font-size: 1.65rem;
+  }
+
+  .membership-header p {
+    margin-top: 0.5rem;
+    font-size: 0.88rem;
+    line-height: 1.5rem;
+  }
+
+  .membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.8rem;
+  }
+
+  .membership-card {
+    width: 100%;
+    padding: 1.3rem 0.8rem;
+  }
+
+  .membership-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .membership-card .price {
+    font-size: 1.5rem;
+  }
+
+  .membership-card ul li {
+    font-size: 0.82rem;
+  }
+
+  .join-now {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.82rem;
+  }
+
+  /* CONTACT */
+
+  .tact {
+    width: 100%;
+    min-height: auto;
+    padding: 3.5rem 0.8rem;
+  }
+
+  .contact {
+    width: 100%;
+    margin-bottom: 1.8rem;
+  }
+
+  .contact h2 {
+    font-size: 1.65rem;
+  }
+
+  .contact p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.88rem;
+    line-height: 1.5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .label {
+    font-size: 0.88rem;
+  }
+
+  .input,
+  .textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .butt button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  /* FOOTER */
+
+  .gym-footer {
+    padding: 3rem 0.8rem 1rem;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    width: 100%;
+  }
+
+  .footer-brandname > p,
+  .footer-contact > p,
+  .footer-links > li {
+    font-size: 0.82rem;
+    line-height: 1.4rem;
+  }
+
+  .social-icons > a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer-bottom {
+    margin-top: 1.8rem;
+    padding-top: 0.8rem;
+    font-size: 0.75rem;
+  }
+}
